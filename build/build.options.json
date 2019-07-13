@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "/home/tashi/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/libraries",
+  "customBuildProperties": "build.path=/home/tashi/Jarvis /EndPoint/ESPEndPoint/build,build.warn_data_percentage=75,runtime.tools.xtensa-esp32-elf-gcc.path=/home/tashi/.arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-80-g6c4433a-5.2.0,runtime.tools.xtensa-esp32-elf-gcc-1.22.0-80-g6c4433a-5.2.0.path=/home/tashi/.arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/1.22.0-80-g6c4433a-5.2.0,runtime.tools.esptool_py.path=/home/tashi/.arduino15/packages/esp32/tools/esptool_py/2.6.1,runtime.tools.esptool_py-2.6.1.path=/home/tashi/.arduino15/packages/esp32/tools/esptool_py/2.6.1,runtime.tools.mkspiffs.path=/home/tashi/.arduino15/packages/esp32/tools/mkspiffs/0.2.3,runtime.tools.mkspiffs-0.2.3.path=/home/tashi/.arduino15/packages/esp32/tools/mkspiffs/0.2.3",
+  "fqbn": "esp32:esp32:esp32wrover:PartitionScheme=default,FlashMode=qio,FlashFreq=80,UploadSpeed=921600,DebugLevel=none",
+  "hardwareFolders": "/home/tashi/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/hardware,/home/tashi/.arduino15/packages",
+  "otherLibrariesFolders": "/home/tashi/Jarvis /EndPoint/libraries",
+  "runtime.ide.version": "10809",
+  "sketchLocation": "/home/tashi/Jarvis /EndPoint/ESPEndPoint/ESPEndPoint.ino",
+  "toolsFolders": "/home/tashi/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/tools-builder,/home/tashi/Downloads/arduino-1.8.9-linux64/arduino-1.8.9/hardware/tools/avr,/home/tashi/.arduino15/packages"
+}
