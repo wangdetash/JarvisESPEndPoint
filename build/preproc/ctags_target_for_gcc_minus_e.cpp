@@ -4,8 +4,8 @@
 # 3 "/home/tashi/Jarvis /EndPoint/ESPEndPoint/ESPEndPoint.ino" 2
 
 // Replace with your network credentials
-const char* ssid = "GNXS-483F50";
-const char* password = "1234567890";
+const char* ssid = "ESP32-Access-Point";
+const char* password = "ESP32Password";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -21,7 +21,7 @@ const int output26 = 26;
 
 void setup() {
 
-  // Set serial communication baud rate
+  // Setup baudrate for serial communication
   Serial.begin(115200);
 
   // Initialize the output variables as outputs
@@ -30,20 +30,16 @@ void setup() {
   // Set outputs to LOW
   digitalWrite(output26, 0x0);
 
-  // Connect to Wi-Fi network with SSID and password
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
+  // Setup ESP32 as access point with ssid and password
+  WiFi.softAP(ssid, password);
+  Serial.print("Setting AP (Access Point)…");
 
-  // Print local IP address and start web server
-  Serial.println("");
-  Serial.println("WiFi connected.");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
+  // Obtain Access point IP 
+  IPAddress IP = WiFi.softAPIP();
+  Serial.print("AP IP address: ");
+  Serial.println(IP);
+
+  // Begin webserver
   server.begin();
 }
 
